@@ -64,3 +64,20 @@
 [data-theme='dark'] #footer-wrap a {
   color: var(--light-grey);
 }
+/* 背景 */
+body {
+  background: url("/img/24050805_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+@media screen and (max-width: 1000px) {
+  body body {
+    background: url("/img/24050803.png") no-repeat fixed center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
