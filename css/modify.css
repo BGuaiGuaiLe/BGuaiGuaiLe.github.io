@@ -72,12 +72,28 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-@media screen and (max-width: 1000px) {
-  body body {
+/* 在嵌套规则中添加媒体查询 */
+@media only screen and (max-width: 900px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background: url("/img/24050803.png") no-repeat fixed center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
   }
+}
+#swiper_container {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+.recent-post-info {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
